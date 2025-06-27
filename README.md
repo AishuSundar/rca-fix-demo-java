@@ -80,3 +80,17 @@ Apply the XML patch
 Open a PR with message:
 
 “Fix: Added missing Spring Boot dependency versions to pom.xml”
+
+
+🔄 How to Simulate Each Issue Again
+🔢	Issue Type	How to Simulate Again
+1️⃣	Test failure	Edit EmployeeTests.java to fail (assertEquals(1, 2))
+2️⃣	Missing dependency version	Remove <version> or <parent> in pom.xml
+3️⃣	Missing env var	Remove DB_PASSWORD from GitHub secrets
+4️⃣	Missing property	Delete spring.datasource.driver-class-name
+5️⃣	Hardcoded secret	Add String secret = "12345" in any file
+6️⃣	Code style issue	Add a very long line in any class
+7️⃣	Functional bug	Remove ID check from PUT endpoint
+8️⃣	Dependency conflict	Downgrade h2 to 2.0.202
+
+
